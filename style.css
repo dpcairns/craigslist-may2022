@@ -1,0 +1,132 @@
+/* css TAG selector */
+
+/* --usafa-blue: #26547cff;
+--paradise-pink: #ef476fff;
+--orange-yellow-crayola: #ffd166ff;
+--caribbean-green: #06d6a0ff;
+--white: #fcfcfcff; */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    /* if you give these properties to a parent element, the children will be centered */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.whole-screen {
+    background-color: #06d6a0ff;
+    /* take up 100% the height MY CONTAINER */
+    height: 100%; 
+    width: 100%;
+}
+
+.box {
+    background-color: red;
+    border: solid 1px black;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    /* with display inline we are not allowed to control height */
+    display: inline-block;
+}
+
+h1 {
+    color: rgb(51, 135, 9)
+}
+
+p {
+    background-color: #06d6a0ff
+}
+
+
+/* css CLASS selector */
+.very-cool-p-tag {
+    background-color: darkmagenta;
+}
+
+.good-div:hover {
+    background-color: indigo;
+    /* transform: rotate(2deg) */
+}
+
+/* css id selector */
+.unique-div {
+font-size: 3rem;
+   color: #06d6a0ff; 
+   background-color: rgb(27, 77, 203);
+   padding-left: 50px;
+   border-left: solid 5px black;
+   margin-top: 50px;
+   /* root element */
+   font-size: 2.5rem; 
+   /* background-image: url(https://www.placebear.com/400/400);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain; */
+}
+
+.my-image {
+    width: 100px;
+}
+
+/* the selector defined last wins */
+.my-image {
+    width: 150px;
+}
+
+.my-grid {
+    border: solid 1px black;
+    width: 80%;
+    height: 50%;
+    display: grid;
+    grid-template-rows: 33.333% 33.333% 33.333%;
+}
+
+.top-left {
+    overflow: scroll;
+}
+
+.my-grid div {
+    border: solid 1px black;
+}
+
+.top-row {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.middle-row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.bottom-row {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.top-right {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.top-right-top {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-image: url(https://placebear.com/400/400);
+}
+
+.bottom-left {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}

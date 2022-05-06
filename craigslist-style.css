@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.outer-box {
+    width: 1000px;
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: 20% 65% 15%;
+}
+
+.outer-box div {
+    border: solid 1px black;
+}
+
+.middle {
+    display: grid;
+    grid-template-rows: 5% 95%;
+}
+
+.middle-bottom {
+    display: grid;
+    grid-template-columns: 30% 45% 25%;
+}
+
+.box {
+    width: 90%;
+    height: 120px;
+}
